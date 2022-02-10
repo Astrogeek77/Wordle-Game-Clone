@@ -11,6 +11,24 @@ body {
   margin: 0;
   padding: 1em;
   font-size: clamp(.5rem, 2.5vmin, 1.5rem);
+  overflow: hidden;
+}
+
+h1 {
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 0.5rem 0 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  word-wrap: break-word;
+  margin-top: 0;
+}
+
+h1 span {
+  display: block;
+  font-size: .6em;
+  color:hsl(115, 29%, 43%);
 }
 
 .keyboard {
@@ -76,10 +94,10 @@ body {
   justify-content: center;
   align-content: center;
   flex-grow: 1;
-  grid-template-columns: repeat(5, 4em);
-  grid-template-rows: repeat(6, 4em);
+  grid-template-columns: repeat(5, 3.5em);
+  grid-template-rows: repeat(6, 3.5em);
   gap: .25em;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .tile {
@@ -180,7 +198,7 @@ body {
 
 .alert-container {
   position: fixed;
-  top: 10vh;
+  top: 14vh;
   left: 50vw;
   transform: translateX(-50%);
   z-index: 1;
